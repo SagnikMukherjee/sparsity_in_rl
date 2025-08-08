@@ -13,6 +13,7 @@ The purpose of this repository is to provide simple, reproducible tools for anal
    Make sure you have the necessary tools installed:  
    ```bash
    pip install -r requirements.txt
+   cd src
 
 2. **Check the update sparsity**
    ```bash
