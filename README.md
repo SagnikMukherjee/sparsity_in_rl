@@ -1,4 +1,19 @@
 # Reinforcement Learning Finetunes Small Subnetworks in Large Language Models
 
+The purpose of this repository is to provide simple, reproducible tools for analyzing how reinforcement learning fine-tuning affects large language models. Specifically, it measures parameter update sparsity—the fraction of weights that change between a supervised fine-tuned model and its RL-finetuned version—and computes the rank of update matrices to understand the structure and capacity of these changes. This helps researchers study parameter efficiency, interpretability, and compression opportunities in RL-tuned LLMs.
 
-<img width="1110" height="354" alt="image" src="https://github.com/user-attachments/assets/6210704a-b24f-43dd-96a9-03f29c0df4c5" />
+## 🔗 Links
+
+- 📝 [Paper](https://arxiv.org/abs/2505.11711)
+- 📰 [Blog (coming)](<your_blog_link_here>)
+
+## Getting Started
+
+1. **Install Requirements**  
+   Make sure you have the necessary tools installed:  
+   ```bash
+   pip install -r requirements.txt
+
+2. **Check the update sparsity**
+   ```bash
+   python check_sparsity.py --sft_model <SFT_MODEL> --rl_model <RL_MODEL> --cache_dir <Your local HF cache> --torch_dtype <bfloat16/float16/..> --device_map cpu --tolerances 1e-5
