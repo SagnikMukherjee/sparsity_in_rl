@@ -1,6 +1,6 @@
 # Reinforcement Learning Finetunes Small Subnetworks in Large Language Models
 
-The purpose of this repository is to provide simple, reproducible tools for analyzing how reinforcement learning fine-tuning affects large language models. Specifically, it measures parameter update sparsity—the fraction of weights that change between a supervised fine-tuned model and its RL-finetuned version—and computes the rank of update matrices to understand the structure and capacity of these changes. This helps researchers study parameter efficiency, interpretability, and compression opportunities in RL-tuned LLMs.
+
 
 ## 🔗 Links
 
